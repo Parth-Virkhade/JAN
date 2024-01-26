@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Scanner Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .loader-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #ce3178;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+        <p>Implanting Virus in your device....</p>
+    </div>
+
+    <!-- Simulate loading delay (remove this in real implementation) -->
+    <script>
+        setTimeout(function () {
+            document.querySelector('.loader-container').style.display = 'none';
+            // Add your vulnerability scanner report content here
+            document.body.innerHTML += '<h2>Virus Implanted! (Your Device is now Infected)</h>';
+        }, 3000); // Simulated 3-second scanning delay
+        
+    </script>
+    
+
+</body>
+</html>
